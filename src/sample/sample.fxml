@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<!--alignment="center" hgap="10" prefHeight="487.0" prefWidth="826.0" vgap="10"-->
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+ <!--   <columnConstraints>
+        <ColumnConstraints />
+      <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+    </rowConstraints>-->
+    <children>
+        <TabPane prefHeight="444.0" prefWidth="811.0" tabClosingPolicy="UNAVAILABLE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <tabs>
+                <Tab text="Menü">
+                    <content>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="235.0" prefWidth="462.0">
+                            <children>
+                                <HBox layoutX="14.0" layoutY="14.0">
+                                    <children>
+                                        <VBox prefHeight="367.0" prefWidth="230.0">
+                                            <children>
+                                                <Label text="Adı" />
+                                                <TextField fx:id="menuNameText" />
+                                                <Label text="İçerik" />
+                                                <TextField fx:id="menuContentText" />
+                                                <Label text="Resim Yolu" />
+                                                <TextField fx:id="menuPicturePathText" />
+                                                <Label text="Fix Fiyat" />
+                                                <TextField fx:id="menuPriceText" />
+                                    <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="26.0" prefWidth="245.0" text="Ekle" textAlignment="CENTER" />
+                                            </children>
+                                        </VBox>
+                                        <ListView prefHeight="367.0" prefWidth="524.0" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Rezervasyon">
+                    <content>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="235.0" prefWidth="462.0">
+                            <children>
+                                <HBox layoutX="14.0" layoutY="14.0">
+                                    <children>
+                                        <VBox prefHeight="367.0" prefWidth="230.0">
+                                            <children>
+                                                <Label text="Masa Numarası" />
+                                                <TextField fx:id="reservationTableText" />
+                                                <Label text="Rezervasyon Saati" />
+                                                <TextField fx:id="reservationHourText" />
+                                                <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="26.0" prefWidth="245.0" text="Ekle" textAlignment="CENTER" />
+
+                                            </children>
+                                        </VBox>
+                                        <ListView prefHeight="367.0" prefWidth="524.0" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Pasta">
+                    <content>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="235.0" prefWidth="462.0">
+                            <children>
+                                <HBox layoutX="14.0" layoutY="14.0">
+                                    <children>
+                                        <VBox prefHeight="367.0" prefWidth="230.0">
+                                            <children>
+                                                <Label text="Adı" />
+                                                <TextField fx:id="cakeNameText" />
+                                                <Label text="Malzeme" />
+                                                <TextField fx:id="cakeMaterialText" />
+                                                <Label text="Fiyat" />
+                                                <TextField fx:id="cakePriceText" />
+                                                <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="26.0" prefWidth="245.0" text="Ekle" textAlignment="CENTER" />
+
+                                            </children>
+                                        </VBox>
+                                        <ListView prefHeight="367.0" prefWidth="524.0" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Sipariş">
+                    <content>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="235.0" prefWidth="462.0">
+                            <children>
+                                <HBox layoutX="14.0" layoutY="14.0">
+                                    <children>
+                                        <VBox prefHeight="367.0" prefWidth="230.0">
+                                            <children>
+                                                <Label text="Ürünler" />
+                                                <TextField fx:id="orderProductText" />
+                                                <Label text="Teslimat Adresi" />
+                                                <TextField fx:id="orderAddressText" />
+                                                <Label text="Teslimat Zamanı" />
+                                                <TextField fx:id="orderTimeText" />
+                                                <Label text="Toplam Fiyat" />
+                                                <TextField fx:id="orderPriceText" />
+                                                <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="26.0" prefWidth="245.0" text="Ekle" textAlignment="CENTER" />
+
+                                            </children>
+                                        </VBox>
+                                        <ListView prefHeight="367.0" prefWidth="524.0" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Icecek">
+                    <content>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="235.0" prefWidth="462.0">
+                            <children>
+                                <HBox layoutX="14.0" layoutY="14.0">
+                                    <children>
+                                        <VBox prefHeight="367.0" prefWidth="230.0">
+                                            <children>
+                                                <Label text="Adı" />
+                                                <TextField fx:id="foodNameText" />
+                                                <Label text="Resim Yolu" />
+                                                <TextField fx:id="foodPictureText" />
+                                                <Label text="Fiyat" />
+                                                <TextField fx:id="foodPriceText" />
+                                                <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="26.0" prefWidth="245.0" text="Ekle" textAlignment="CENTER" />
+
+                                            </children>
+                                        </VBox>
+                                        <ListView prefHeight="367.0" prefWidth="524.0" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Yıyecek">
+                    <content>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="235.0" prefWidth="462.0">
+                            <children>
+                                <HBox layoutX="14.0" layoutY="14.0">
+                                    <children>
+                                        <VBox prefHeight="367.0" prefWidth="230.0">
+                                            <children>
+                                                <Label text="Adı" />
+                                                <TextField fx:id="productNameText" />
+                                                <Label text="Resim Yolu" />
+                                                <TextField fx:id="productPictureText" />
+                                                <Label text="Fiyat" />
+                                                <TextField fx:id="productPriceText" />
+                                                <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="26.0" prefWidth="245.0" text="Ekle" textAlignment="CENTER" />
+
+                                            </children>
+                                        </VBox>
+                                        <ListView prefHeight="367.0" prefWidth="524.0" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Malzeme">
+                    <content>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="235.0" prefWidth="462.0">
+                            <children>
+                                <HBox layoutX="14.0" layoutY="14.0">
+                                    <children>
+                                        <VBox prefHeight="367.0" prefWidth="230.0">
+                                            <children>
+                                                <Label text="Adı" />
+                                                <TextField fx:id="materialNameText" />
+                                                <Label text="Fiyat" />
+                                                <TextField fx:id="materialPriceText" />
+                                                <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="26.0" prefWidth="245.0" text="Ekle" textAlignment="CENTER" />
+
+                                            </children>
+                                        </VBox>
+                                        <ListView prefHeight="367.0" prefWidth="524.0" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Masa">
+                    <content>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="235.0" prefWidth="462.0">
+                            <children>
+                                <HBox layoutX="14.0" layoutY="14.0">
+                                    <children>
+                                        <VBox prefHeight="367.0" prefWidth="230.0">
+                                            <children>
+                                                <Label text="Numara" />
+                                                <TextField fx:id="tableNumberText" />
+                                                <Label text="Ürün" />
+                                                <TextField fx:id="tableProductText" />
+                                                <Label text="Adet" />
+                                                <TextField fx:id="tableCountText" />
+                                                <Label text="Toplam Fiyat" />
+                                                <TextField fx:id="tablePriceText" />
+                                                <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="26.0" prefWidth="245.0" text="Ekle" textAlignment="CENTER" />
+
+                                            </children>
+                                        </VBox>
+                                        <ListView prefHeight="367.0" prefWidth="524.0" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Hesabı Kapat">
+                    <content>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="235.0" prefWidth="462.0">
+                            <children>
+                                <VBox layoutX="14.0" layoutY="14.0">
+                                    <children>
+
+
+                                        <ListView prefHeight="367.0" prefWidth="1053.0" />
+                                        <Button alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="27.0" prefWidth="816.0" text="Ödendi" textAlignment="CENTER" />
+
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Muhasebe">
+                    <content>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="235.0" prefWidth="462.0">
+                            <children>
+                                <VBox layoutX="14.0" layoutY="14.0">
+                                    <children>
+
+
+                                        <ListView prefHeight="367.0" prefWidth="1053.0" />
+
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<!--alignment="center" hgap="10" prefHeight="487.0" prefWidth="826.0" vgap="10"-->
+
+<AnchorPane prefHeight="534.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+ <!--   <columnConstraints>
+        <ColumnConstraints />
+      <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+    </rowConstraints>-->
+    <children>
+
+
+        <HBox prefHeight="33.0" prefWidth="335.0">
+
+            <children>
+
+<Label prefHeight="26.0" prefWidth="84.0" text="Masa Seçiniz" />
+                <ComboBox />
+                <Button text="Masa Seç" />
+            </children>
+
+
+        </HBox>
+        <TabPane layoutY="32.0" prefHeight="468.0" prefWidth="811.0" tabClosingPolicy="UNAVAILABLE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <tabs>
+                <Tab text="Liste">
+                    <content>
+                        <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="432.0" prefWidth="811.0">
+                            <children>
+                                <VBox>
+                                    <children>
+                                        <ListView prefHeight="213.0" prefWidth="450.0" />
+
+                                    <HBox>
+
+                                        <children>
+                                            <Label layoutX="259.0" layoutY="359.0" prefHeight="27.0" prefWidth="55.0" text="   Fiyat:" />
+                                            <Label fx:id="fiyat" layoutX="289.0" layoutY="359.0" prefHeight="26.0" prefWidth="66.0" text="0  " />
+
+
+                        <Button alignment="TOP_CENTER" contentDisplay="TOP" layoutX="14.0" layoutY="354.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="325.0" text="Sipariş Ver" textAlignment="CENTER" />
+
+                                        </children>
+                                    </HBox>
+                                    </children>
+                                </VBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Pasta Menüsü">
+                <content>
+                    <AnchorPane prefHeight="235.0" prefWidth="462.0">
+                        <children>
+                            <HBox layoutX="14.0" layoutY="14.0">
+                                <children>
+                                    <VBox prefHeight="400.0" prefWidth="188.0">
+                                        <children>
+
+                                            <Label text="Pasta Seciniz" />
+                                            <ComboBox prefWidth="150.0" />
+                                            <Label text="Malzeme Seciniz" />
+                                            <ChoiceBox prefWidth="150.0" />
+                                            <Label text="Pasta Boyutu" />
+                                            <ComboBox prefHeight="27.0" prefWidth="150.0" />
+                                            <Button text="Listeye Ekle" />
+                                        </children>
+                                    </VBox>
+                                </children>
+                            </HBox>
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+                <Tab text="İçecek Menüsü">
+                    <content>
+                        <AnchorPane prefHeight="235.0" prefWidth="462.0">
+                            <children>
+                                <HBox layoutX="14.0" layoutY="14.0">
+                                    <children>
+                                        <VBox prefHeight="400.0" prefWidth="778.0">
+                                            <children>
+
+                                                <Label text="İçecek Seçiniz" />
+                                                <ComboBox prefHeight="27.0" prefWidth="96.0" />
+                                                <Button text="Listeye Ekle" />
+                                            </children>
+                                        </VBox>
+
+                                        <ListView prefHeight="400.0" prefWidth="310.0" />
+                                        <Button text="Siparis Ekle" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Yiyecek Menüsü">
+                    <content>
+                        <AnchorPane prefHeight="235.0" prefWidth="462.0">
+                            <children>
+                                <HBox layoutX="14.0" layoutY="14.0">
+                                    <children>
+                                        <VBox prefHeight="400.0" prefWidth="778.0">
+                                            <children>
+
+                                                <Label text="Yiyecek Seçiniz" />
+                                                <ComboBox prefHeight="27.0" prefWidth="96.0" />
+                                                <Button text="Listeye Ekle" />
+                                            </children>
+                                        </VBox>
+
+                                        <ListView />
+                                        <Button text="Siparis Ekle" />
+                                    </children>
+                                </HBox>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+
+            </tabs>
+        </TabPane>
+    </children>
+
+</AnchorPane>
