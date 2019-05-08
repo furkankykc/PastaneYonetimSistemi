@@ -1,28 +1,30 @@
 package Entity;
 
+import java.util.ArrayList;
+
 public class DailyLog {
 
-    private Product soldProducts;
+    private ArrayList<Product> products;
 
     public DailyLog() {
     }
 
-    public DailyLog(Product soldProducts) {
-        this.soldProducts = soldProducts;
+    public DailyLog(ArrayList<Product> products) {
+        this.products = products;
     }
 
-    public Product getSoldProducts() {
-        return soldProducts;
+    public ArrayList<Product> getProducts() {
+        return products;
     }
 
-    public void setSoldProducts(Product soldProducts) {
-        this.soldProducts = soldProducts;
+    public void setProducts(ArrayList<Product> products) {
+        this.products = products;
     }
 
     @Override
     public String toString() {
         return "DailyLog{" +
-                "soldProducts=" + soldProducts +
+                "products=" + products +
                 '}';
     }
 

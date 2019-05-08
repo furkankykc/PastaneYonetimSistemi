@@ -1,19 +1,19 @@
 package Entity;
 
+import java.util.ArrayList;
+
 public class Dealer {
     private String name;
     private String address;
-    private Admin admin;
-    private Cake cake;
+    private ArrayList<Patisserie> patisseries;
 
     public Dealer() {
     }
 
-    public Dealer(String name, String address, Admin admin, Cake cake) {
+    public Dealer(String name, String address, ArrayList<Patisserie> patisseries) {
         this.name = name;
         this.address = address;
-        this.admin = admin;
-        this.cake = cake;
+        this.patisseries = patisseries;
     }
 
     public String getName() {
@@ -32,20 +32,13 @@ public class Dealer {
         this.address = address;
     }
 
-    public Admin getAdmin() {
-        return admin;
+
+    public ArrayList<Patisserie> getPatisseries() {
+        return patisseries;
     }
 
-    public void setAdmin(Admin admin) {
-        this.admin = admin;
-    }
-
-    public Cake getCake() {
-        return cake;
-    }
-
-    public void setCake(Cake cake) {
-        this.cake = cake;
+    public void setPatisseries(ArrayList<Patisserie> patisseries) {
+        this.patisseries = patisseries;
     }
 
     @Override
@@ -53,8 +46,7 @@ public class Dealer {
         return "Dealer{" +
                 "name='" + name + '\'' +
                 ", address='" + address + '\'' +
-                ", admin=" + admin +
-                ", cake=" + cake +
+                ", patisseries=" + patisseries +
                 '}';
     }
 }

@@ -3,12 +3,12 @@ package Entity;
 public class Product {
     private String name;
     private String image_path;
-    private String price;
+    private int price;
 
     public Product() {
     }
 
-    public Product(String name, String image_path, String price) {
+    public Product(String name, String image_path, int price) {
         this.name = name;
         this.image_path = image_path;
         this.price = price;
@@ -30,11 +30,11 @@ public class Product {
         this.image_path = image_path;
     }
 
-    public String getPrice() {
+    public int getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPrice(int price) {
         this.price = price;
     }
 

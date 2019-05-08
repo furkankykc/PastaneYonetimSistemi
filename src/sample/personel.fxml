@@ -54,7 +54,7 @@
 
                                         <children>
                                             <Label layoutX="259.0" layoutY="359.0" prefHeight="27.0" prefWidth="55.0" text="   Fiyat:" />
-                                            <Label fx:id="fiyat" layoutX="289.0" layoutY="359.0" prefHeight="26.0" prefWidth="66.0" text="0  " />
+                                            <Label fx:id="price" layoutX="289.0" layoutY="359.0" prefHeight="26.0" prefWidth="66.0" text="0  " />
 
 
                         <Button alignment="TOP_CENTER" contentDisplay="TOP" layoutX="14.0" layoutY="354.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="325.0" text="Sipariş Ver" textAlignment="CENTER" />

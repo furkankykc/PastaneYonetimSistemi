@@ -1,25 +1,27 @@
 package Entity;
 
+import java.util.ArrayList;
+
 public class Cake extends Product {
 
-    private Material material;
+    private ArrayList<Material> materials;
     private int size;
 
     public Cake() {
-        super();
     }
 
-    public Cake(String name, Material material, String picturePath,String price) {
+    public Cake(String name, ArrayList<Material> materials, String picturePath, int price,int size) {
         super(name,picturePath,price);
-        this.material = material;
+        this.materials = materials;
+        this.size = size;
     }
 
-    public Material getMaterial() {
-        return material;
+    public ArrayList<Material> getMaterials() {
+        return materials;
     }
 
-    public void setMaterial(Material material) {
-        this.material = material;
+    public void setMaterials(ArrayList<Material> materials) {
+        this.materials = materials;
     }
 
     public int getSize() {
@@ -34,7 +36,7 @@ public class Cake extends Product {
     public String toString() {
         return "Cake{" +
                 "name='" + this.getName() + '\'' +
-                ", material=" + material +
+                ", materials=" + materials +
                 ", picturePath='" + this.getImage_path() + '\'' +
                 ", size=" + size +
                 ", price=" + this.getPrice() +
